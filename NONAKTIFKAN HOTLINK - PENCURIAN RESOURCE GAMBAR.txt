@@ -1,0 +1,6 @@
+TAMBAHKAN DI PALING BAWAH .HTACCESS
+
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http://(www\.)domainkamu\.tld/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://(www\.)domainkamu\.tld$      [NC]
+RewriteRule .*\.(jpg|jpeg|gif|png|bmp)$ .*\.(gif|jpg)$ [R,NC]

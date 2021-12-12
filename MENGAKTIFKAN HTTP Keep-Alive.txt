@@ -1,0 +1,7 @@
+MENGAKTIFKAN HTTP Keep-Alive
+
+TAMBAHKAN BARIS KODE DIBAWAH KE .HTACCESS (BAGIAN ATAS)
+
+<IfModule mod_headers.c>
+Header set Connection keep-alive
+</IfModule>

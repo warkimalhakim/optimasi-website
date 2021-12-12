@@ -1,0 +1,59 @@
+MERUBAH (VIRTUAL) HOST LOCALHOST
+MENJADI NAMA DOMAIN YANG DIINGINKAN
+==========================================
+LOKASI VHOST:
+C:\xampp\apache\conf\extra\httpd-vhosts.conf
+
+
+
+TAMBAHKAN SOURCE:
+-------------------
+
+
+<VirtualHost *:80>
+
+	DocumentRoot "C:/xampp/htdocs/NAMADOMAINNYA.COM"
+    			ServerName NAMADOMAINNYA.COM
+
+	ServerAlias NAMADOMAINNYA.COM
+
+	<Directory "C:/xampp/htdocs/NAMADOMAINNYA.COM">
+        				AllowOverride All
+
+		Require all Granted
+    
+	</Directory>
+
+</VirtualHost>
+
+ATAU YANG INI (DIREKOMENDASIKAN):
+
+<VirtualHost *:80>
+    ServerAdmin admin@sekilo.com
+    DocumentRoot "C:/xampp/htdocs/sekilo"
+    ServerName sekilo.com
+    ServerAlias www.sekilo.com
+    ErrorLog logs/sekilo.com.log
+    CustomLog logs/sekilo.com.log combined
+    <Directory "C:/xampp/htdocs/sekilo">
+        Options Indexes FollowSymLinks Includes ExecCGI
+        AllowOverride All
+        Order allow,deny
+        Allow from all
+        Require all granted
+    </Directory>
+</VirtualHost>
+
+
+
+BLOK NAMA HOST TERSEBUT:
+
+-------------------
+
+
+
+C:\Windows\System32\drivers\etc\hosts
+TAMBAHKAN INI:
+127.0.0.1 	NAMADOMAINNYA.COM????
+
+RESTART KEMBALI XAMPP

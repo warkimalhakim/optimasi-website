@@ -1,0 +1,8 @@
+MASUKKAN SCRIPT DILARANG HOTLINK INI DI .HTACCESS
+#JANGAN LUPA GANTI URL-NYA
+
+RewriteEngine on
+RewriteCond %{REQUEST_URI} !dilarang-hotlink\.jpg$
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?nama_domain\.com [NC]
+RewriteRule \.(jpe?g|png|gif)$ /wp-content/uploads/2017/05/dilarang-hotlink.jpg [NC,L]

@@ -1,0 +1,5 @@
+FILE .HTACCESS MEMPERBAIKI ERROR NOT VALID JSON RESPONSE
+==================
+# Sisipkan ini kedalam mod_rewrite htaccess yang ada
+SecFilterEngine Off
+SecFilterScanPOST Off
