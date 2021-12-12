@@ -1,0 +1,27 @@
+TAHAP UPLOAD KE GITHUB
+=============================
+1. BUAT REPO DI GITHUB
+2. JIKA BELUM ADA PROJEK, SILAHKAN CLONE: git clone <URL REPO>
+3. JIKA SUDAH ADA PROJECT, SILAHKAN INIT: git init
+4. CEK STATUS: git status
+5. JIKA ADA YANG 'UNTRACK' / PERUBAHAN, SILAHAKN DI ADD: git add .
+6. JIKA SUDAH OKE, SILAHKAN DI COMMIT: git commit -m "<NAMA COMMIT>"
+7. REMOTE (poin 3): git remote add origin <URL REPO>
+8. PUSH/UPLOAD: git push -u origin master
+
+* -u untuk mendefinisikan universal atau di setting agar push selanjutnya cukup push dengan: git push
+
+
+MELIHAT DAFTAR REMOTE YANG ADA (VERBOSI)
+==================================
+git remote -v
+
+MENGHAPUS GIT INIT
+===============================
+git remote rm <NAMA ORIGIN>
+
+*biasanya nama originnya adalah origin, periksa dahulu dengan git remote -v
+
+MELIHAT BRANCH
+=========================
+git branch
