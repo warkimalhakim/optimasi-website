@@ -1,0 +1,22 @@
+MERUBAH ALIAS PHPMYADMIN DI LARAGON
+=======
+PATH	: LARAGON > ETC > APACHE2 > ALIAS > PHPMYADMIN
+* LINE 1
+* Alias /pma85 "C:/laragon/etc/apps/phpMyAdmin/"
+
+
+
+MEMBUKA REMOTE MYSQL DI LARAGON
+=====
+PATH	: LARAGON > ETC > APACHE2 > ALIAS > PHPMYADMIN
+* UBAH REQUIRE LOCAL (ATAU SEBAGAINYA)
+* MENJADI REQUIRE ALL GRANTED
+
+<Directory "C:/laragon/etc/apps/phpMyAdmin/">
+	Options Indexes FollowSymLinks MultiViews
+	AllowOverride all  
+ 
+	Require all granted
+</Directory>
+
+* JANGAN LUPA MEMBUKA PORT MELALUI FIREWALL
