@@ -2,7 +2,7 @@ MERUBAH ALIAS PHPMYADMIN DI LARAGON
 =======
 PATH	: LARAGON > ETC > APACHE2 > ALIAS > PHPMYADMIN
 * LINE 1
-* Alias /pma85 "C:/laragon/etc/apps/phpMyAdmin/"
+* Alias /NAMA_ALIASNYA_DISINI "C:/laragon/etc/apps/phpMyAdmin/"
 
 
 
