@@ -1,0 +1,51 @@
+**************************************************
+MENGGANTI VERSI PHP
+**************************************************
+# DOWNLOAD TERLEBIH DAHULU PHP (DALAM BENTUK ARSIP/.ZIP) DAN EXTRACT DALAM FOLDER
+# LARAGON DALAM KEADAAN SHOOTDOWN / SERVICENYA TIDAK BERJALAN
+# PASTE DI DIREKTORI / PATH: C:\laragon\bin\php
+# BUKA LARAGON (CONTROL) KLIK KANAN > PILIH PHP > PILIH VERSION > KEMUDIAN JALANKAN
+# SELESAI
+
+
+**************************************************
+MENGGANTI HEIDI SQL KE PHPMYADMIN DENGAN MARIADB SEBAGAI ENGINENYA
+**************************************************
+# DOWNLOAD TERLEBIH DAHULU PHPMYADMIN (DALAM BENTUK ARSIP/.ZIP) DAN EXTRACT DALAM FOLDER
+# LETAKKAN KE DIREKTORI PATH: C:\laragon\etc\apps
+# RENAME MENJADI phpMyAdmin
+
+# DOWNLOAD TERLEBIH DAHULU MARIADB (DALAM BENTUK ARSIP/.ZIP) DAN EXTRACT DALAM FOLDER
+# LETAKKAN KE DIREKTORI PATH: C:\laragon\bin\mysql
+# SILAHKAN RENAME (REKOMENDASI: TIDAK PERLU)
+
+### MENGAKTIFKAN PHPMYADMIN
+# BUKA LARAGON (CONTROL)
+# KLIK KANAN > MYSQL > PILIH VERSI KE MARIADB
+# KEMUDIAN JALANKAN / RUN SEMUA SERVICESNYA
+
+
+
+**************************************************
+MERUBAH URL PHPMYADMIN (TIDAK MENGGUNAKAN /phpmyadmin)
+**************************************************
+# BUKA / MENGARAH KE DIREKTORI PATH: C:\laragon\etc\apache2\alias
+# EDIT phpmyadmin ATAU phpmyadmin.conf
+# UBAH BARIS PERTAMA INI:
+
+Alias /phpmyadmin "C:/laragon/etc/apps/phpMyAdmin/"
+
+UBAH /phpmyadmin --> MENJADI YANG ANDA INGINKAN. CONTOHNYA MENJADI SEPERTI INI
+Alias /database "C:/laragon/etc/apps/phpMyAdmin/"
+
+# SELESAI
+
+
+**************************************************
+SERVICE DATABASE MARIADB ERROR / CAN'T START
+**************************************************
+# MATIKAN SERVICES LARAGON
+# BUKA DIREKTORI LARAGON. DEFAULT: C:\laragon
+# BUKA DIREKTORI C:\laragon\data
+# RENAME (DATABASE/FOLDER YANG DIKEHENDAKI) MISALNYA: mariadb-10.5.OLD
+# JALANKAN KEMBALI SERVICESNYA
