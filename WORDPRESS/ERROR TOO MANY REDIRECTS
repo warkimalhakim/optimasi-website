@@ -1,0 +1,23 @@
+MENGATASI ERROR TOO MANY REDIRECTS
+
+TAMPILAN PADA WEB BROWSER:
+# Chrome - The page isn't working … ERR_TOO_MANY_REDIRECTS
+# Firefox - The page isn't redirecting properly
+# Microsoft Edge - The page isn't working right now … ERR_TOO_MANY_REDIRECTS
+# Safari - Safari Can't Open the Page - Too many redirects occurred trying to open …
+
+SOLUSI:
+1. HAPUS CACHE & COOKIE
+2. PERBAIKI KONEKSI HTTPS ATAU PADA HTACCESS (LIHAT DEFAULT HTACCESS)
+3. PERBAIKI URL
+4. RESET PLUGINS MELALUI DATABASE
+
+
+3. PERBAIKI URL
+TAMBAHKAN PADA BAGIAN AKHIR FILE CONFIG.PHP
+===================================
+define('WP_HOME','https://exampledomain.com');
+define('WP_SITEURL','https://exampledomain.com');
+
+4. RESET PLUGINS MELALUI DATABASE
+WP_OPTIONS > ACTIVE_PLUGIN > GANTI: a:0:{}
